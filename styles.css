@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/comfortaa/v45/1Ptsg8LJRfWJmhDAuUs4TYFq.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+body {
+    font-family: 'Comfortaa', sans-serif; /* Add a fallback font */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.title-name {
+    text-align: center;
+    font-size: 24px;
+
+}
+
+.box-tool {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 300px;
+    justify-content: center;
+    gap:100px;
+    max-height: 800px;
+    
+
+}
+
+.grid-size {
+    display: flex;
+    flex-direction: row; 
+    font-size: 18px;
+    font-style: italic;
+    margin-top: -30px;
+    margin-bottom: 30px;
+
+}
+
+.tool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    border:8px double black;
+    height: 400px;
+    width: 220px;
+ 
+}
+
+.box-ctn {
+    border:6px solid black;
+    height: 780px;
+    width:  800px;
+    box-sizing: border-box;
+
+}
+
+.tool-btn {
+background-color: black;
+color: white;
+font-size: 18px;
+width: 180px;
+}
+
+.tools button {
+    justify-content: space-between;
+    gap:30px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#tool-title {
+    font-size: 24px;
+    font-weight:900;
+}

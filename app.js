@@ -94,6 +94,7 @@ eraserBtn.addEventListener("click", () => {
 
 // Clear all pixels
 clearBtn.addEventListener("click", () => {
+  currentTool = "";
   clearGrid();
   removeActiveColor();
   clearBtn.classList.add("active");

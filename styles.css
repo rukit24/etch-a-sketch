@@ -64,11 +64,35 @@ body {
 }
 
 .tool-btn {
-background-color: black;
-color: white;
-font-size: 18px;
-width: 180px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    width: 180px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
+
+.tool-btn:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 
+                 0 0 20px rgba(255, 255, 255, 0.7); /* text lighting effect */
+    transform: scale(1.1); /* upscale button size */
+}
+
+.tool-btn.active {
+    background-color: #388e3c; /* Màu xanh sau khi click */
+    transform: translateY(2px) scale(0.98);
+    color: white;
+    box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.6);
+}
+
+.tool-btn:active {
+    background-color: #388e3c;
+    transform: translateY(2px) scale(0.98);
+    box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.6);
+  }
 
 .tools button {
     justify-content: space-between;
@@ -100,4 +124,8 @@ h2 {
     flex: 1 1 0%;
     border: 1px solid black;
     border-bottom:hidden;
+}
+
+.hovered {
+    background-color: black;
 }
